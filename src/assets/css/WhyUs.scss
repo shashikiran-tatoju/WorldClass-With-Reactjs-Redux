@@ -1,0 +1,47 @@
+@import './global.scss';
+.worldClassWhyUs{
+    @extend .contentProperties;
+    &__heading{
+        @extend .Heading;
+    }
+    &__Text{
+        @extend .subHeading;
+        width:51%;
+    }
+    &__UL{
+        width: 60%;
+        margin: 0px auto;
+        padding: 50px 0px;
+    }
+    &__LI{
+        @extend .liPropeties;
+        width: 48%;
+        text-align: left;
+        text-transform: unset;
+    }
+    &__avlImages{
+        @extend .bgImageProperties;
+        background: url(../images/availableProperties.png) no-repeat;
+        background-size: 55px;
+        background-position-x: center;
+        background-position-y: center; 
+    }
+    &__rentImages{
+        @extend .bgImageProperties;
+        background: url(../images/rentableSquareFt.png) no-repeat;
+        background-size: 50px; 
+        background-position-x: center;
+        background-position-y: center; 
+    }
+    &__liValues{
+        padding: 37px 0px 18px 0px;
+        font-size: 30px;
+        font-family: nunito-regular; 
+    }
+    &__liText{
+        width: 95%;
+        line-height: 25px;
+        font-size: 20px;
+        font-family: nunito-regular; 
+    }
+}

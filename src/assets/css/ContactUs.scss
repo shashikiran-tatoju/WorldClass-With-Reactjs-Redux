@@ -1,0 +1,106 @@
+@import './global.scss';
+.worldClassContactUs{
+    &__heading{
+        @extend .Heading;
+    }
+    &__UL{
+        width: 70%;
+        margin: 0px auto;
+        padding: 45px 0px; 
+        font-family: nunito-semiBold; 
+    }
+    &__LI{
+        display: inline-block;
+        width: 33%; 
+        line-height: 25px;
+        vertical-align: middle;
+    }
+    &__bgIcons{
+        width: 40px;
+        height: 40px;
+        border-radius: 0px 10px; 
+        text-indent: -99999em;
+        float: left;
+        padding: 0px 10px;
+    }
+    .bg--icon1{
+        background: url(../images/callUs.png) no-repeat;
+    }
+    .bg--icon2{
+        background: url(../images/mailUs.png) no-repeat; 
+    }
+    .bg--icon3{
+        background: url(../images/corporateWebsite.png) no-repeat;
+    }
+    &__text0{
+        font-size: 15px;
+        opacity: 0.5;
+        color: #c5c5c5; 
+    }
+    &__text1{
+        opacity: 0.9;
+        color: #ffffff; 
+        text-decoration: none;
+    }
+    &__text1:hover{
+        color: #fece24;
+    }
+
+    //form scss file start
+    &__form{
+        @extend .worldClassContactUs__UL;
+        padding: 0px;
+    }
+    &__inputDiv{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    &__inputs1{
+        width: 46%;
+        margin-left: 0px;
+        height: 50px;
+        background-color: #3a3a3a;
+        border: 1px solid #515151;
+        border-radius: 5px;
+        color: #ffffff;
+        padding-left: 20px;
+        outline: none;
+        font-size: 20px;
+        font-family: nunito-regular; 
+    }
+    &__inputs{
+        @extend .worldClassContactUs__inputs1;
+        margin-left: 20px;
+    }
+    .inputMessage--properties{
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+    }
+    .errorMessage{
+        background: url(../images/Error-512.png) no-repeat; 
+        color: #ff0000;
+        background-size: 20px;
+        padding: 0px 30px;
+        line-height: 27px;
+        display: none;
+    }
+    .sucessMessage{
+        color: green;
+    }
+    &__button{
+        @extend .yellowButton;
+        background: url(../images/right_arrow.png) no-repeat; 
+        background-size: 25px;
+        background-position-y: center;
+        background-position-x: 160px;
+        background-color: #fece24;
+        padding-left: 40px;
+        text-align: left;
+        margin: 55px 0px 30px 450px ;
+        font-size: 25px;
+    }
+    &__button:hover{
+        @extend .yellowButton:hover;
+    }
+}   

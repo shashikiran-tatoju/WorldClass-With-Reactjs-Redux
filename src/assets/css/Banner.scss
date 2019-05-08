@@ -1,0 +1,38 @@
+ @import './global.scss';
+ .worldClass{
+    &__banner{
+        background: url(../images/Hero2@2x.png) no-repeat;
+        width: 100%; 
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    &__bannerTextDiv{
+        width: 100%;
+        margin: 0px auto;
+        margin: 125px 0 205px 0px;
+        text-align: center;
+    }
+    &__worldText{
+        font-size: 40px;
+        text-align: center; 
+        line-height: 53px; 
+        width: 60%;
+        margin: 0px auto; 
+        font-family: nunito-light; 
+        padding-top: 10px;
+    }
+    &__bannerDate{
+        text-align: center;
+        font-size: 39px; 
+        font-family: nunito-semiBold;
+        margin: 0px auto;
+        margin-top: 15px;
+        margin-bottom: 23px;
+    }
+    &__yellowButton{
+        @extend .yellowButton; 
+    }
+    &__yellowButton:hover{
+        @extend .yellowButton:hover; 
+    }
+}

@@ -1,0 +1,88 @@
+@import './global.scss';
+@import './Header.scss';
+.worldClassSxsw{
+    @extend .contentProperties; 
+    //Page heading scss Start 
+    &__heading{
+         @extend .Heading; 
+    }
+    &__southText{
+        @extend .subHeading;
+    }
+    //Page header scss ends
+
+    //Sxsw scss start
+    &__UL{ 
+        @extend .buttonsUl;
+    }
+    &__LI{
+        @extend .liPropeties;
+    }
+    &__liValue{ 
+        padding: 30px 0px 15px 0px;
+        font-size: 30px; 
+        font-family: nunito-semiBold; 
+    }
+    &__liText{
+        font-size: 15px;
+        text-align: center;
+        margin: 0px auto;
+        padding: 10px 0px 0px 0px;
+        line-height: 20px;
+        font-family: nunito-regular; 
+    }
+    //Sxsw scss end
+}
+
+//Business Content Start
+.worldClassBUSGoals{
+    @extend .worldClass__header; 
+    &__heading{
+        @extend .Heading;  
+    }
+    &__UL{ 
+        @extend .buttonsUl;
+        width: 80%
+    }
+    &__Li{
+        display: inline-block;
+        width: 13%;
+        padding-left: 10px;
+        vertical-align: top;
+        text-align: center;
+    } 
+    &__text{
+        padding: 10px 0px; 
+        line-height: 25px;
+        height: 50px;
+        width: 163px;
+        font-family: nunito-regular;
+    }
+    &__liValue{
+        font-family: roboto-medium;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    &__buttonsUL{
+        width: 51%;
+        margin: 0px auto;
+        padding: 20px 0px 60px 0px;
+    }
+    &__buttonsLi{
+        display: inline-block;
+         margin-left: 100px;
+    }
+    &__grayButton{
+        @extend .grayButton;
+    }
+    &__grayButton:hover{
+        @extend .grayButton:hover; 
+    }
+    &__yellowButton{
+        @extend .yellowButton; 
+    }
+    &__yellowButton:hover{
+        @extend .yellowButton:hover; 
+    }
+} 
+//Business Content end

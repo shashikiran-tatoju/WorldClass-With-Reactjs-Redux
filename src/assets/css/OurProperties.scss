@@ -1,0 +1,162 @@
+@import './global.scss';
+.worldClassOurProperties{
+    &__heading{
+        @extend .Heading;
+        opacity: 0.8;
+    }
+    &__Text{
+        @extend .subHeading;
+        opacity: 0.8;
+    }
+    &__button{
+        @extend .yellowButton;
+        background: url(../images/right_arrow.png) no-repeat; 
+        background-size: 25px;
+        background-position-y: center;
+        background-position-x: 180px;
+        background-color: #fece24;
+        padding-left: 30px;
+        text-align: left;
+        margin: 55px 0px 30px 660px ; 
+    }
+
+    //Our properties buttons scc start
+    &__UL{
+        @extend .buttonsUl;
+    }
+    &__LI1{
+        @extend .liPropeties;
+        height: 200px; 
+        cursor: pointer;
+        margin-left: 0px;
+    }
+    &__LI{
+        @extend .liPropeties;
+        height: 200px;
+        opacity: 0.5;
+        cursor: pointer;
+        margin-left: 14px;
+    }
+    &__LI:hover{
+        opacity: 0.9;
+    }
+    &__images{
+        @extend .bgImageProperties;
+        width: 100%;
+        height: 125px;
+    }
+    .bg--image1{
+        background: url(../images/west6th.png) no-repeat;
+        background-position: center;
+    }
+    .bg--image2{
+        background: url(../images/congressAvenue.png) no-repeat;
+        background-position: center;
+    }
+    .bg--image3{
+        background: url(../images/entertainment.png) no-repeat;
+        background-position: center;  
+    }
+    .bg--image4{
+        background: url(../images/redRiverMusic.png) no-repeat;
+        background-position: center;
+    }
+    .bg--image5{
+        background: url(../images/convention.png) no-repeat;
+        background-position: center;
+    }
+    .bg--image6{
+        background: url(../images/eastAustin.png) no-repeat;
+        background-position: center;
+    }
+    &__liText{
+        line-height: 25px;
+        font-size: 20px;
+        font-family: nunito-regular; 
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+//Worldclass our propertie scss file start
+.worldClassWest6th{
+    width: 97%;
+    margin: 0px auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px 0px;
+    margin-bottom: 60px;
+    &__heading{
+        text-align: center;  
+        font-size: 30px;
+        padding: 50px 0px 40px 0px; 
+        letter-spacing: 2px;  
+        font-family: nunito-regular; 
+        text-transform: uppercase;
+        opacity: 0.8;
+    }
+    &__4thUL{
+        width: 85%;
+        margin: 0px auto;
+        border: 1px solid #d8d8d8;
+        border-radius: 5px;
+        margin-bottom: 40px; 
+        font-family: nunito-regular; 
+    }
+    &__4thLI{
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+        padding-bottom: 10px; 
+        margin-bottom: 5px;
+    }
+    &__4thImage{
+        width: 100%;
+        height: 370px;   
+    } 
+    &__4thLI2{
+        @extend .worldClassWest6th__4thLI;
+        padding: 20px 0px 0px 75px;
+        width: 40%;
+    }
+    &__4thHeding{
+        font-size: 28px;
+        opacity: 0.5;
+        letter-spacing: 2px;
+        line-height: 25px;
+        text-transform: uppercase;  
+    }
+    &__4thSubHeading{
+        font-size: 25px;
+        opacity: 0.5;
+        line-height: 40px;
+    }
+    &__4thHtext{
+        background: url(../images/bulletPoint.png) no-repeat;
+        padding: 0px 0px 0px 30px;
+        vertical-align: middle;
+        line-height: 25px;
+        background-position-x: left;
+        background-position-y: 10px;
+        font-size: 17px;
+        opacity: 0.5;
+        width: 85%;
+    }
+    &__4thText1{
+        @extend .worldClassWest6th__4thHtext;
+        background: unset;
+        padding: 0px;
+    }
+    &__button{
+       @extend .yellowButton;   
+        background: url(../images/right_arrow.png) no-repeat; 
+        background-size: 25px;
+        background-position-y: center;
+        background-position-x: 165px;
+        background-color: #fece24;
+        text-align: left;
+        font-size: 23px;
+        padding: 13px 0px 13px 20px;
+        margin-top: 10px;
+        width: 215px;
+    }
+}

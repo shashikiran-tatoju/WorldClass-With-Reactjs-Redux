@@ -1,0 +1,21 @@
+@import './global.scss';
+.worldClassFooter{
+    @extend .contentProperties;
+    &__logo{
+        background: url(../images/WorldClassFooterLogo.png) no-repeat;
+        background-size: 200px; 
+        width: 200px; 
+        text-indent: -99999em;
+        float: left; 
+        padding: 35px;
+        background-position: center;
+        opacity: 0.7;
+    }
+    &__text{
+        float: right;
+        color: #ffffff;
+        opacity: 0.5; 
+        padding: 20px;
+        font-size: 15px; 
+    }
+}

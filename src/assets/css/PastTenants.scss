@@ -1,0 +1,57 @@
+@import './global.scss';
+.worldClasspastTenants{
+    @extend .contentProperties;
+    &__heading{
+        @extend .Heading;
+    }
+    &__heading{
+        @extend .Heading; 
+    }
+    //Past tenants content scss start 
+    &__leftUL{
+        width: 51%;
+        margin: 0px auto;
+    }
+    &__leftLi{
+        display: inline-block;
+        width: 24%; 
+        margin: 20px 0px;
+        vertical-align: middle;
+    }
+    &__leftImages1{
+        width: 100px;
+        height: 30px;
+    }  
+    &__leftImages2{
+        @extend .worldClasspastTenants__leftImages1;
+        height: 20px;
+    }    
+    &__leftImages3{
+        @extend .worldClasspastTenants__leftImages1;
+        height: 50px;
+    } 
+    //Past tenants left content scss end
+
+    //Past tenants right content scss start
+    &__rightUL{
+        width: 44%;
+        margin: 0px auto;
+    }
+    &__rightLi1{
+        vertical-align: middle;
+        display: inline-block;      
+        width: 33%;
+        margin: 20px 0px;
+    }
+    &__rightLi2{
+        @extend .worldClasspastTenants__rightLi1;
+        margin: 20px 0px 20px 180px;
+    }
+    &__rightImages{
+        width: 200px;
+    }
+    &__rightImage2{
+        width: 250px;
+        height: 85px;
+    }
+}
